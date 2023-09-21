@@ -15,16 +15,37 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.luxury.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.luxury.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "./plugins/build/index",
+        {
+          "ios": {
+            "CodePushDeploymentKey": "DEPLOYMENT_KEY_IOS"
+          },
+          "android": {
+            "CodePushDeploymentKey": "DEPLOYMENT_KEY_ANDROID"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "96b1f00b-4705-41b5-b4d6-d27ed9228fbf"
+      }
+    },
+    "owner": "manuel.juarez"
   }
 }

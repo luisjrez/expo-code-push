@@ -33,3 +33,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# native projects
+android
+ios
+
+# expo config plugin builds
+plugins/build
